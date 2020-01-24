@@ -1,0 +1,13 @@
+a1 type business d 0 w 5 t 10 transactions 10 2 overdraft Y 40
+a2 type personal d 0 w 0 t 0 transactions 7 1 overdraft N
+a3 type business d 0 w 10 t 0 transactions 10 2 overdraft Y 30
+a4 type business d 0 w 15 t 5 transactions 10 1 overdraft Y 30
+dep1 d a1 1000 d a2 3000 d a3 1000
+dep2 d a1 2000 d a2 2000 d a3 1000
+dep3 d a4 5000 d a3 1000
+c1 d a2 2000 t a1 a2 100
+c2 w a1 1728 t a1 a2 100 d a4 100
+c3 d a2 300 t a3 a2 100 w a4 2500
+c4 t a1 a2 100 w a1 90000
+c5 d a2 10 w a1 1728 t a4 a3 2900
+c6 w a1 308
